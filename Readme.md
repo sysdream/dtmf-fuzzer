@@ -15,13 +15,13 @@ How to try it
 * Make sure to have Gadget installed on your smartphone (see our Gadget repository for the APK)
 * Install the DTMF fuzzer APK trough ADB in /system/app/ and check if it appears in the list of the installed applications
 
-  # adb remount
-  # adb push dtmf-fuzzer.apk /system/app/
+    # adb remount
+    # adb push dtmf-fuzzer.apk /system/app/
 
 * Run gadget
 * Forward TCP port 4444 through ADB: adb forward tcp:4444 tcp:4444
 
-  # adb forward tcp:4444 tcp:4444
+    # adb forward tcp:4444 tcp:4444
 
 * Make sure to have the gadget-client library installed (or present in the same directory)
 * Change the dialed number in script/dtmfuzz.py and save

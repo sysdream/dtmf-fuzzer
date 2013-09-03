@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.virtualabs.dtmfuzz"
+    android:versionCode="1"
+    android:versionName="1.0"
+    android:sharedUserId="android.uid.system">
+
+    <uses-sdk
+        android:targetSdkVersion="17" />
+    
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.CALL_PRIVILEGED"/>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+	
+    <application>
+        <activity android:name="DTMFuzz"
+            android:label="@string/app_name"
+            android:process="com.android.phone"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service
+        	android:name="com.sysdream.fino.InspectionService"
+        	android:exported="true"
+        	android:enabled="true"
+        	android:process="com.android.phone">
+			<intent-filter>
+	    		<action android:name="com.sysdream.fino.inspection" />
+	  		</intent-filter>
+		</service>
+    </application>
+
+</manifest>

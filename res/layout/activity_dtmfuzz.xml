@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	tools:context=".DTMFuzz" >
+
+    <LinearLayout
+    	android:id="@+id/linearLayout1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" >
+
+    	<TextView
+    		android:id="@+id/status"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_gravity="left"
+    		android:layout_weight="2.06"
+    		android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <ScrollView
+    	android:id="@+id/scroll"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_alignRight="@+id/linearLayout1"
+    	android:layout_below="@+id/linearLayout1" >
+
+    	<LinearLayout
+    		android:layout_width="285dp"
+    		android:layout_height="fill_parent"
+    		android:orientation="vertical" >
+
+    		<TextView
+    			android:id="@+id/log"
+    			android:layout_width="fill_parent"
+    			android:layout_height="fill_parent" />
+    	</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

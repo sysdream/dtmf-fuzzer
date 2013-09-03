@@ -17,7 +17,7 @@ How to try it
 
 ```
 # adb remount
-# adb push dtmf-fuzzer.apk /system/app/
+# adb push apk/dtmf-fuzzer.apk /system/app/
 ```
 
 * Run gadget

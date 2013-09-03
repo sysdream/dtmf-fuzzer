@@ -31,3 +31,6 @@ If you have trouble testing this PoC, feel free to contact us at:
 * Twitter: @virtualabs
 * Email: d.cauquil -at- sysdream -dot- com
 
+
+Hack In Paris 2013 slides: http://kaiyou.fr/files/2013/06/main.pdf
+Hack In Paris 2013 video: https://www.youtube.com/watch?v=Tv5bmlPXyFU
